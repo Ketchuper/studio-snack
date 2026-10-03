@@ -1,14 +1,15 @@
 # STUDIO SNACK: Cursor 引き継ぎ
 
-最終更新日: 2026-10-01
+最終更新日: 2026-10-02
 
 ## 現在の状態
 
 - Next.js 16 / App Router / TypeScript の静的レビューサイト。
+- 公開: https://studio-snack.vercel.app （GitHub: https://github.com/Ketchuper/studio-snack ）
 - ローカル確認: `npm run dev` → `http://localhost:3000/ja`
-- 品質確認済み: `npm run lint`、`npm run typecheck`、`npm run build`。
 - 日英ページ: `/ja`, `/ja/price`, `/ja/access`, `/ja/about`, `/ja/contact` と対応する `/en`。
-- 現時点でフォーム、Google Calendar、決済、LINE、メール通知の外部連携は未実装。
+- 予約・相談 / 無料見学CTAは公式LINE（`https://lin.ee/uXXgtB1`）へ接続済み。
+- フォーム、Google Calendar、決済、メール通知は未接続。
 
 ## デプロイ手順
 
@@ -25,13 +26,13 @@ NEXT_PUBLIC_SITE_URL=https://<正式ドメイン>
 
 ## 公式LINEの接続
 
-LINE公式アカウントとURLが確定したら、CTAの遷移先をLINE URLへ切り替える。現状は `/${locale}/contact` へ遷移する。
+予約・相談CTAは `studio.lineUrl`（`https://lin.ee/uXXgtB1`）へ遷移する。
 
 - 連絡先データ: `src/content/studio.ts`
-- CTA: `src/components/shared/Button.tsx` と各ページ・HOMEセクション
+- CTA: Hero / FinalCTA / Sticky / PRICE / ACCESS / ABOUT / CONTACT
 - 翻訳: `src/messages/ja.json`、`src/messages/en.json`
 
-最初は、LINE URLへの遷移だけを実装する。自動応答、管理者通知、予約確定はLINE Messaging APIのチャネル情報と運用要件が決まってから追加する。
+自動応答、管理者通知、予約確定はLINE Messaging APIのチャネル情報と運用要件が決まってから追加する。
 
 ## 予約フォームと予約確定の実装順
 
@@ -45,13 +46,13 @@ LINE公式アカウントとURLが確定したら、CTAの遷移先をLINE URL�
 
 ## 未確定の公開情報
 
+- 正式ドメイン（当面 `https://studio-snack.vercel.app`）
 - 正式メールアドレス
 - 駐車場・入口案内、営業時間
 - Tough Sakiの正式プロフィール
 - 各実績の制作担当範囲
-- LINE公式アカウントURL
 - 予約枠、所要時間、キャンセル規約、決済手段、通知先
 
 ## 写真
 
-現行サイト由来の仮写真を `public/images/studio/` に配置している。部屋・機材・構図を変えずに画質を上げる生成指示は `PHOTO_REGENERATION_PROMPTS.md` を参照する。
+スタジオ写真は `public/images/studio/` の3枚（`studio-console.jpg` / `studio-room.jpg` / `studio-mic.jpg`）。画質向上版を配置済み。部屋・機材・構図を変えずに再生成する場合は `PHOTO_REGENERATION_PROMPTS.md` を参照（長辺2048px以上推奨）。

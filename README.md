@@ -11,12 +11,14 @@ npm run dev
 
 `http://localhost:3000` は `/ja` に転送されます。英語版は `/en` です。
 
-## 公開前の設定
+## 公開状況と運用設定
 
-1. `.env.example` を参考に `NEXT_PUBLIC_SITE_URL` を正式ドメインへ設定する。canonical、OG、JSON-LD、サイトマップに使われます。
+公開URL: `https://studio-snack.vercel.app`
+
+1. 正式ドメインが決まったら、Vercelの `NEXT_PUBLIC_SITE_URL` を更新する。canonical、OG、JSON-LD、サイトマップに使われます。
 2. `src/messages/{ja,en}.json` の文言を確認する。Tough Sakiのプロフィール文は仮原稿です。
 3. `src/content/works.ts` の実績と担当範囲、`src/content/equipment.ts` の機材の現状を確認する。
-4. 正式メール、入口・駐車場、営業時間、LINE URL、写真の掲載・加工方針を確定する。
+4. 正式メール、入口・駐車場、営業時間、写真の掲載・加工方針を確定する。公式LINEのURLは接続済みです。
 5. フォーム送信、カレンダー予約、決済、通知は運用ルール確定後に接続する。現在のフォームは送信できません。
 
 ## 素材

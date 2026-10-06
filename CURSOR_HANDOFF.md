@@ -11,18 +11,19 @@
 - 予約・相談 / 無料見学CTAは公式LINE（`https://lin.ee/uXXgtB1`）へ接続済み。
 - フォーム、Google Calendar、決済、メール通知は未接続。
 
-## デプロイ手順
+## デプロイ状況
 
-1. この `studio-snack` ディレクトリ単位でGitHubリポジトリを作成・pushする。
-2. VercelでそのリポジトリをImportする。Framework PresetはNext.js。
-3. Previewを開き、PCとモバイルで `/ja` と `/en` を確認する。
-4. Production用ドメイン決定後、Vercel Environment Variablesに次を設定する。
+- GitHub: `https://github.com/Ketchuper/studio-snack`
+- Vercel Production: `https://studio-snack.vercel.app`
+- VercelはGitHubの`main`ブランチから自動デプロイする。
+
+正式ドメイン決定後、Vercel Environment Variablesに次を設定する。
 
 ```text
 NEXT_PUBLIC_SITE_URL=https://<正式ドメイン>
 ```
 
-5. ドメインをVercelプロジェクトに接続し、Productionへデプロイする。
+その後、ドメインをVercelプロジェクトに接続する。
 
 ## 公式LINEの接続
 

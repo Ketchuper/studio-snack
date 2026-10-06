@@ -17,7 +17,7 @@
 - Vercel Production: `https://studio-snack.vercel.app`
 - VercelはGitHubの`main`ブランチから自動デプロイする。
 
-正式ドメイン決定後、Vercel Environment Variablesに次を設定する。
+Vercel Environment Variablesには次を設定する。正式ドメイン決定後は値を置き換える。
 
 ```text
 NEXT_PUBLIC_SITE_URL=https://<正式ドメイン>

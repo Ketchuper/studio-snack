@@ -15,7 +15,7 @@ npm run dev
 
 公開URL: `https://studio-snack.vercel.app`
 
-1. 正式ドメインが決まったら、Vercelの `NEXT_PUBLIC_SITE_URL` を更新する。canonical、OG、JSON-LD、サイトマップに使われます。
+1. Vercelでは `NEXT_PUBLIC_SITE_URL=https://studio-snack.vercel.app` を設定する。正式ドメイン決定後はこの値を置き換える。canonical、OG、JSON-LD、サイトマップに使われます。
 2. `src/messages/{ja,en}.json` の文言を確認する。Tough Sakiのプロフィール文は仮原稿です。
 3. `src/content/works.ts` の実績と担当範囲、`src/content/equipment.ts` の機材の現状を確認する。
 4. 正式メール、入口・駐車場、営業時間、写真の掲載・加工方針を確定する。公式LINEのURLは接続済みです。

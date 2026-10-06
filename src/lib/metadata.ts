@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getMessages, type Locale } from "@/lib/i18n";
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "http://localhost:3000";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://studio-snack.vercel.app";
 export type PageKey = "home" | "price" | "access" | "about" | "contact";
 
 export function pageMetadata(locale: Locale, page: PageKey): Metadata {

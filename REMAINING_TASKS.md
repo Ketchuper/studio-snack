@@ -1,13 +1,14 @@
 # STUDIO SNACK 残タスク
 
-最終更新日: 2026-10-06
+最終更新日: 2026-10-07
 
 ## 現在の公開状態
 
 - 公開URL: `https://studio-snack.vercel.app`
 - 予約・相談と無料見学のCTA: 公式LINEへ接続済み
 - 日英のHOME / PRICE / ACCESS / ABOUT / CONTACT: 公開済み
-- フォーム送信、Google Calendar、決済、通知: 未実装
+- Google Calendar連携、オンライン決済、予約通知: 未実装
+- CONTACTはLINEで予約・相談する手順を表示
 
 ## 最優先: 公開情報の確定
 
@@ -35,7 +36,6 @@
 
 | 優先度 | 内容 | 着手条件 |
 | --- | --- | --- |
-| 高 | 現在は送れないフォームを、LINEへの誘導カードへ置き換える | この案で進める承認 |
 | 高 | 正式ドメインに合わせてcanonical、OG、サイトマップを切り替える | ドメイン確定、Vercelアクセス |
 | 中 | Google Analytics / Search Consoleを接続して、LINE CTAのクリックを計測する | Googleアカウントと計測方針 |
 | 中 | Googleビジネスプロフィールを整備する | オーナーアカウントと営業時間確定 |

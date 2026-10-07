@@ -1,6 +1,6 @@
 # STUDIO SNACK: Cursor 引き継ぎ
 
-最終更新日: 2026-10-02
+最終更新日: 2026-10-07
 
 ## 現在の状態
 
@@ -8,8 +8,10 @@
 - 公開: https://studio-snack.vercel.app （GitHub: https://github.com/Ketchuper/studio-snack ）
 - ローカル確認: `npm run dev` → `http://localhost:3000/ja`
 - 日英ページ: `/ja`, `/ja/price`, `/ja/access`, `/ja/about`, `/ja/contact` と対応する `/en`。
-- 予約・相談 / 無料見学CTAは公式LINE（`https://lin.ee/uXXgtB1`）へ接続済み。
-- フォーム、Google Calendar、決済、メール通知は未接続。
+- 予約・相談 / 無料見学CTAは公式LINE（`https://lin.ee/xgzNuf3`）へ接続済み。
+- CONTACTは送信できないフォームを削除し、LINEへ送る情報を案内するカードを表示。
+- Google Calendar、オンライン決済、予約通知は未接続。
+- LINEのリッチメニューは公開中。チャットと友だち追加時の挨拶を有効化済み。
 
 ## デプロイ状況
 
@@ -27,7 +29,7 @@ NEXT_PUBLIC_SITE_URL=https://<正式ドメイン>
 
 ## 公式LINEの接続
 
-予約・相談CTAは `studio.lineUrl`（`https://lin.ee/uXXgtB1`）へ遷移する。
+予約・相談CTAは `studio.lineUrl`（`https://lin.ee/xgzNuf3`）へ遷移する。
 
 - 連絡先データ: `src/content/studio.ts`
 - CTA: Hero / FinalCTA / Sticky / PRICE / ACCESS / ABOUT / CONTACT

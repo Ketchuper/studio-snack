@@ -19,7 +19,7 @@ public/images/{studio,okinawa,brand}/
 - `/` は `/ja` へ。言語切替は同じページを保つ。翻訳はローカルJSON、実績・連絡先・機材は型付きデータで管理する。
 - 共通部品: `Header`、`LocaleSwitch`、`MobileMenu`、`Footer`、`StickyBookingCTA`、`Button`。
 - HOME: `Hero`、`PackageOverview`、`WorksGallery`、`FirstRecordingFlow`、`ToughSakiProfile`、`FinalCTA`。
-- PRICE はパッケージと確認済み条件、ACCESS は住所と地図、ABOUT はプロフィールと機材、CONTACT は問い合わせ導線と送信準備中の入力UI。
+- PRICE はパッケージと確認済み条件、ACCESS は住所と地図、ABOUT はプロフィールと機材、CONTACT はLINEの予約・相談案内。
 
 ## デザインと動き
 
@@ -32,9 +32,9 @@ public/images/{studio,okinawa,brand}/
 ## 検索と公開前確認
 
 - 各言語・各ページにタイトル、説明、canonical、hreflang、OG画像。`LocalBusiness` JSON-LD は確定情報だけを載せ、サイトマップとrobotsを用意する。
-- レビュー版の予約・相談導線はCONTACTへ。電話とInstagramを有効にする。LINE、フォーム送信、カレンダー、決済、通知はアカウントと運用ルールが揃ってから。
+- 現在の予約・相談導線は公式LINE、電話、Instagram。送信機能のないフォームは置かない。カレンダー、オンライン決済、自動通知は運用ルールとアカウントが揃ってから接続する。
 - 完了条件: 5ページ×2言語、全ナビ・CTA・実績リンク、スマートフォン、キーボード、動き軽減、ビルド、視覚比較。
-- 公開前TODO: 正式メール、駐車場・入口、営業時間、Tough Saki正式プロフィール、作品ごとの担当範囲、LINE URL、予約所要時間、空き枠、キャンセル規約、決済手段、通知先、正式ドメイン。
+- 公開前TODO: 正式メール、駐車場・入口案内、Tough Saki正式プロフィール、作品ごとの担当範囲、予約所要時間、空き枠、キャンセル規約、決済手段、通知先、正式ドメイン。
 
 ## 作業分担の基準
 

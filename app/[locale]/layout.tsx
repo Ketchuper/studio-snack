@@ -22,7 +22,8 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     image: `${siteUrl}/images/studio/studio-room.jpg`,
     telephone: studio.phoneDisplay,
     priceRange: "¥20,000 per song (tax included)",
-    address: { "@type": "PostalAddress", streetAddress: "室川2-1-9 ハイビスカスビル404号室", addressLocality: "沖縄市", addressRegion: "沖縄県", postalCode: studio.postalCode, addressCountry: "JP" },
+    address: { "@type": "PostalAddress", streetAddress: "室川2-1-9 ハイビスカスビル404号室（3階）", addressLocality: "沖縄市", addressRegion: "沖縄県", postalCode: studio.postalCode, addressCountry: "JP" },
+    openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: studio.openingHours.days, opens: studio.openingHours.opens, closes: studio.openingHours.closes }],
     sameAs: [studio.instagram],
   };
   return <html lang={locale}><body>
